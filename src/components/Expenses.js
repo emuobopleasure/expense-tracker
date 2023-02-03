@@ -15,7 +15,7 @@ const Expenses = ({items}) => {
     ))
 
     return (
-        <div className='expenses bg-[#42224a] px-[2rem] py-[2rem] rounded-tl-[3rem] rounded-tr-[3rem] text-[#e7e3e8] fixed left-0 right-0 bottom-0 md:max-w-[900px] md:mx-auto'>
+        <div className='expenses bg-[#42224a] px-[2rem] pt-[1rem] rounded-tl-[3rem] rounded-tr-[3rem] text-[#e7e3e8] fixed left-0 right-0 bottom-0 md:max-w-[900px] md:mx-auto'>
             <h1 className='title text-xl font-semibold mb-[1.5rem]'>
                 Expenses
             </h1>

@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { AiOutlinePlus } from 'react-icons/ai';
 
 const ExpenseForm = ({ saveExpenseHandler }) => {
     const [enteredTitle, setEnteredTitle] = useState('')
@@ -47,8 +48,8 @@ const ExpenseForm = ({ saveExpenseHandler }) => {
         <div>
             {showBtn &&
             <div className='flex justify-end mr-[6vw] md:mr-[7vw] lg:mr-[20vw]'>
-                <button onClick={modalToggle} className="w-fit text-white bg-[#ef8767] hover:bg-[#ec6c44] focus:outline-none focus:scale-105 font-medium rounded-[0.9rem] text-sm px-5 py-2.5 text-center">
-                    Add Expense
+                <button onClick={modalToggle} className="w-fit text-white bg-[#ef8767] hover:bg-[#ec6c44] focus:outline-none focus:scale-105 font-medium rounded-[0.9rem] text-sm px-5 py-2.5 text-center shadow-2xl md:shadow-current md:shadow flex gap-1 items-center">
+                    <AiOutlinePlus size='1.5rem' className='plus-icon'/> <span className='hidden md:flex'>Add Expense</span>
                 </button>
             </div>
             }
