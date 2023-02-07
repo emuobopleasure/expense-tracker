@@ -1,7 +1,5 @@
 import { useState } from "react";
-import ExpenseItem from "./components/ExpenseItem";
 import Expenses from "./components/Expenses";
-import Modal from "./components/Modal";
 import NewExpense from "./components/NewExpense";
 
 function App() {
