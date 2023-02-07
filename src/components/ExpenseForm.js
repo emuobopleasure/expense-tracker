@@ -37,6 +37,8 @@ const ExpenseForm = ({ saveExpenseHandler }) => {
         setEnteredAmount('')
         setEnteredTitle('')
         setEnteredDate('')
+        setShowModal((prevState) => !prevState)
+        setShowBtn((prevState) => !prevState)
     }
 
     const modalToggle = () => {
@@ -79,7 +81,7 @@ const ExpenseForm = ({ saveExpenseHandler }) => {
                                         <label htmlFor="date" className="block mb-2 text-sm font-medium text-white">Date</label>
                                         <input type="date" value={enteredDate} onChange={dateChangeHandler} name="date" placeholder="2022, 04, 28" min='2021-01-01' className="bg-[#684e6e] border border-gray-300 text-white text-sm rounded-[0.9rem] focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required />
                                     </div>
-                                    <button type="submit" onClick={modalToggle} className="w-full text-white bg-[#ef8767] hover:bg-[#ec6c44] focus:outline-none focus:scale-105 font-medium rounded-[0.9rem] text-sm px-5 py-2.5 text-center">
+                                    <button type="submit" className="w-full text-white bg-[#ef8767] hover:bg-[#ec6c44] focus:outline-none focus:scale-105 font-medium rounded-[0.9rem] text-sm px-5 py-2.5 text-center">
                                         Add Expense
                                     </button>
                                 </form>

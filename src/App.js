@@ -40,8 +40,8 @@ function App() {
   }
 
   return (
-    <div className="Expense-App bg-white w-[100vw] h-[100vh] md:bg-[#250e2a] pt-[2rem]">
-      <Modal/>
+    <div className="Expense-App bg-white w-[100vw] h-[100vh] md:bg-[#250e2a] pt-[2rem] md:text-white">      
+      
       <NewExpense
         addExpenseHandler={addExpenseHandler} 
       />

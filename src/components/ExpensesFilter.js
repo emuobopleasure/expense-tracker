@@ -14,7 +14,7 @@ const ExpensesFilter = ({filteredYear, filterChangeHandler}) => {
                 </label>
                 <div className='yearly-filter p-2'>
                     <select value={filteredYear} onChange={dropDownHandler} className='dates bg-[#42224a] border-[1px] border-white rounded-2xl p-2'>
-                        <option >Year</option>
+                        {/* <option >Year</option> */}
                         <option value='2023'>2023</option>
                         <option value='2022'>2022</option>
                         <option value='2021'>2021</option>
